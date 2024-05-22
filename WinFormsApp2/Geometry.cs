@@ -26,6 +26,10 @@ namespace Math_Puzzle_Game
             textBox1.Show();
             textBox2.Hide();
             textBox3.Hide();
+            label6.Hide();
+            label8.Hide();
+            Circ.Hide();
+            Area.Hide();
             Solve.Show();
             label3.Text = "Độ dài cạnh: ";
             Op = 1;
@@ -43,6 +47,10 @@ namespace Math_Puzzle_Game
             label4.Text = "Độ dài cạnh 2: ";
             label5.Text = "Độ dài cạnh 3: ";
             Solve.Show();
+            label6.Hide();
+            label8.Hide();
+            Circ.Hide();
+            Area.Hide();
             Op = 2;
         }
 
@@ -58,6 +66,10 @@ namespace Math_Puzzle_Game
             label3.Text = "Độ dài: ";
             label4.Text = "Độ rộng: ";
             Solve.Show();
+            label6.Hide();
+            label8.Hide();
+            Circ.Hide();
+            Area.Hide();
             Op = 3;
         }
 
@@ -72,7 +84,93 @@ namespace Math_Puzzle_Game
             textBox3.Hide();
             label3.Text = "Bán kính: ";
             Solve.Show();
+            label6.Hide();
+            label8.Hide();
+            Circ.Hide();
+            Area.Hide();
             Op = 4;
+        }
+
+        private void Solve_Click(object sender, EventArgs e)
+        {
+            switch (Op)
+            {
+                case 1:
+                    if (textBox1 == null)
+                    {
+                        MessageBox.Show("Hãy điền giá trị");
+                    }
+                    else
+                    {
+                        label6.Show();
+                        label8.Show();
+                        Circ.Show();
+                        Area.Show();
+                        double C = Int32.Parse(textBox1.Text) * 4;
+                        double S = Int32.Parse(textBox1.Text) * Int32.Parse(textBox1.Text);
+                        Circ.Text = C.ToString();
+                        Area.Text = S.ToString();
+                    }
+                    break;
+                case 2:
+                    if (textBox1 == null || textBox2 == null || textBox3 == null)
+                    {
+                        MessageBox.Show("Hãy điền giá trị");
+                    }
+                    else
+                    {
+                        label6.Show();
+                        label8.Show();
+                        Circ.Show();
+                        Area.Show();
+                        double C = Int32.Parse(textBox1.Text) + Int32.Parse(textBox2.Text) + Int32.Parse(textBox3.Text);
+                        double S = Math.Sqrt((C / 2) * (C / 2 - Int32.Parse(textBox1.Text)) * (C / 2 - Int32.Parse(textBox2.Text)) * (C / 2 - Int32.Parse(textBox3.Text)));
+                        Circ.Text = C.ToString();
+                        Area.Text = S.ToString();
+                    }
+                    break;
+                case 3:
+                    if (textBox1 == null || textBox2 == null)
+                    {
+                        MessageBox.Show("Hãy điền giá trị");
+                    }
+                    else
+                    {
+                        label6.Show();
+                        label8.Show();
+                        Circ.Show();
+                        Area.Show();
+                        double C = (Int32.Parse(textBox1.Text) + Int32.Parse(textBox2.Text)) * 2;
+                        double S = Int32.Parse(textBox1.Text) * Int32.Parse(textBox2.Text);
+                        Circ.Text = C.ToString();
+                        Area.Text = S.ToString();
+                    }
+                    break;
+                case 4:
+                    if (textBox1 == null)
+                    {
+                        MessageBox.Show("Hãy điền giá trị");
+                    }
+                    else
+                    {
+                        label6.Show();
+                        label8.Show();
+                        Circ.Show();
+                        Area.Show();
+                        double C = Int32.Parse(textBox1.Text) * 2 * Math.PI;
+                        double S = Math.Pow(Int32.Parse(textBox1.Text), 2) * Math.PI;
+                        Circ.Text = C.ToString();
+                        Area.Text = S.ToString();
+                    }
+                    break;
+            }
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Pick pick = new Pick();
+            this.Hide();
+            pick.ShowDialog();
         }
     }
 }

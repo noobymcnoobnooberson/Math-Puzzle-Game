@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Solve));
             label1 = new Label();
             label2 = new Label();
             label3 = new Label();
@@ -67,18 +68,20 @@
             // 
             // textBox1
             // 
+            textBox1.BackColor = SystemColors.HighlightText;
             textBox1.Font = new Font("Segoe UI", 27F);
-            textBox1.Location = new Point(21, 192);
+            textBox1.Location = new Point(47, 202);
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(542, 67);
+            textBox1.Size = new Size(518, 67);
             textBox1.TabIndex = 3;
             textBox1.TextAlign = HorizontalAlignment.Center;
             // 
             // label4
             // 
             label4.AutoSize = true;
+            label4.BackColor = Color.Transparent;
             label4.Font = new Font("Segoe UI", 36F);
-            label4.Location = new Point(569, 181);
+            label4.Location = new Point(571, 189);
             label4.Name = "label4";
             label4.Size = new Size(76, 81);
             label4.TabIndex = 4;
@@ -88,8 +91,9 @@
             // label5
             // 
             label5.AutoSize = true;
+            label5.BackColor = Color.Transparent;
             label5.Font = new Font("Segoe UI", 27F);
-            label5.Location = new Point(642, 192);
+            label5.Location = new Point(626, 205);
             label5.Name = "label5";
             label5.Size = new Size(146, 61);
             label5.TabIndex = 5;
@@ -118,12 +122,14 @@
             linkLabel1.TabIndex = 7;
             linkLabel1.TabStop = true;
             linkLabel1.Text = "<- Quay lại";
-            linkLabel1.LinkClicked += this.linkLabel1_LinkClicked;
+            linkLabel1.LinkClicked += linkLabel1_LinkClicked;
             // 
             // Solve
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(800, 450);
             Controls.Add(linkLabel1);
             Controls.Add(button1);
@@ -134,6 +140,7 @@
             Controls.Add(label2);
             Controls.Add(label1);
             Name = "Solve";
+            RightToLeft = RightToLeft.Yes;
             Text = "Form2";
             Load += Form2_Load;
             ResumeLayout(false);

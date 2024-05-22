@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Geometry));
             Square = new Button();
             Triangle = new Button();
             Rectangle = new Button();
@@ -40,62 +41,68 @@
             label5 = new Label();
             Solve = new Button();
             label6 = new Label();
-            label7 = new Label();
+            Circ = new Label();
             textBox1 = new TextBox();
             textBox2 = new TextBox();
             textBox3 = new TextBox();
             label8 = new Label();
-            label9 = new Label();
+            Area = new Label();
             SuspendLayout();
             // 
             // Square
             // 
+            Square.BackColor = Color.White;
             Square.Font = new Font("Segoe UI", 13F);
-            Square.Location = new Point(40, 62);
+            Square.Location = new Point(75, 51);
             Square.Name = "Square";
             Square.Size = new Size(108, 40);
             Square.TabIndex = 0;
             Square.Text = "Vuông";
-            Square.UseVisualStyleBackColor = true;
+            Square.UseVisualStyleBackColor = false;
             Square.Click += Square_Click;
             // 
             // Triangle
             // 
+            Triangle.BackColor = Color.White;
             Triangle.Font = new Font("Segoe UI", 13F);
-            Triangle.Location = new Point(236, 62);
+            Triangle.Location = new Point(246, 51);
             Triangle.Name = "Triangle";
             Triangle.Size = new Size(131, 40);
             Triangle.TabIndex = 1;
             Triangle.Text = "Tam Giác";
-            Triangle.UseVisualStyleBackColor = true;
+            Triangle.UseVisualStyleBackColor = false;
+            Triangle.Click += Triangle_Click;
             // 
             // Rectangle
             // 
+            Rectangle.BackColor = Color.White;
             Rectangle.Font = new Font("Segoe UI", 13F);
-            Rectangle.Location = new Point(460, 62);
+            Rectangle.Location = new Point(440, 51);
             Rectangle.Name = "Rectangle";
             Rectangle.Size = new Size(113, 40);
             Rectangle.TabIndex = 2;
             Rectangle.Text = "Chữ Nhật";
-            Rectangle.UseVisualStyleBackColor = true;
+            Rectangle.UseVisualStyleBackColor = false;
             Rectangle.Click += Rectangle_Click;
             // 
             // Circle
             // 
+            Circle.BackColor = Color.White;
             Circle.Font = new Font("Segoe UI", 13F);
-            Circle.Location = new Point(657, 62);
+            Circle.Location = new Point(614, 51);
             Circle.Name = "Circle";
             Circle.Size = new Size(108, 40);
             Circle.TabIndex = 3;
             Circle.Text = "Tròn";
-            Circle.UseVisualStyleBackColor = true;
+            Circle.UseVisualStyleBackColor = false;
             Circle.Click += Circle_Click;
             // 
             // label1
             // 
             label1.AutoSize = true;
+            label1.BackColor = Color.Transparent;
             label1.Font = new Font("Segoe UI", 14F);
-            label1.Location = new Point(40, 131);
+            label1.Location = new Point(75, 118);
             label1.Name = "label1";
             label1.Size = new Size(143, 32);
             label1.TabIndex = 4;
@@ -111,12 +118,14 @@
             linkLabel1.TabIndex = 8;
             linkLabel1.TabStop = true;
             linkLabel1.Text = "<- Quay lại";
+            linkLabel1.LinkClicked += linkLabel1_LinkClicked;
             // 
             // Chosen
             // 
             Chosen.AutoSize = true;
+            Chosen.BackColor = Color.Transparent;
             Chosen.Font = new Font("Segoe UI", 14F);
-            Chosen.Location = new Point(180, 131);
+            Chosen.Location = new Point(209, 118);
             Chosen.Name = "Chosen";
             Chosen.Size = new Size(94, 32);
             Chosen.TabIndex = 9;
@@ -126,8 +135,9 @@
             // label3
             // 
             label3.AutoSize = true;
+            label3.BackColor = Color.White;
             label3.Font = new Font("Segoe UI", 13F);
-            label3.Location = new Point(40, 192);
+            label3.Location = new Point(75, 192);
             label3.Name = "label3";
             label3.Size = new Size(71, 30);
             label3.TabIndex = 10;
@@ -137,8 +147,9 @@
             // label4
             // 
             label4.AutoSize = true;
+            label4.BackColor = Color.White;
             label4.Font = new Font("Segoe UI", 13F);
-            label4.Location = new Point(40, 246);
+            label4.Location = new Point(75, 246);
             label4.Name = "label4";
             label4.Size = new Size(71, 30);
             label4.TabIndex = 11;
@@ -148,8 +159,9 @@
             // label5
             // 
             label5.AutoSize = true;
+            label5.BackColor = Color.White;
             label5.Font = new Font("Segoe UI", 13F);
-            label5.Location = new Point(40, 303);
+            label5.Location = new Point(75, 303);
             label5.Name = "label5";
             label5.Size = new Size(71, 30);
             label5.TabIndex = 12;
@@ -158,18 +170,21 @@
             // 
             // Solve
             // 
+            Solve.BackColor = Color.White;
             Solve.Font = new Font("Segoe UI", 13F);
-            Solve.Location = new Point(166, 364);
+            Solve.Location = new Point(163, 350);
             Solve.Name = "Solve";
             Solve.Size = new Size(108, 40);
             Solve.TabIndex = 13;
             Solve.Text = "Giải";
-            Solve.UseVisualStyleBackColor = true;
+            Solve.UseVisualStyleBackColor = false;
             Solve.Visible = false;
+            Solve.Click += Solve_Click;
             // 
             // label6
             // 
             label6.AutoSize = true;
+            label6.BackColor = Color.White;
             label6.Font = new Font("Segoe UI", 13F);
             label6.Location = new Point(482, 190);
             label6.Name = "label6";
@@ -178,20 +193,21 @@
             label6.Text = "D =";
             label6.Visible = false;
             // 
-            // label7
+            // Circ
             // 
-            label7.AutoSize = true;
-            label7.Font = new Font("Segoe UI", 13F);
-            label7.Location = new Point(537, 190);
-            label7.Name = "label7";
-            label7.Size = new Size(71, 30);
-            label7.TabIndex = 16;
-            label7.Text = "label7";
-            label7.Visible = false;
+            Circ.AutoSize = true;
+            Circ.BackColor = Color.White;
+            Circ.Font = new Font("Segoe UI", 13F);
+            Circ.Location = new Point(537, 190);
+            Circ.Name = "Circ";
+            Circ.Size = new Size(71, 30);
+            Circ.TabIndex = 16;
+            Circ.Text = "label7";
+            Circ.Visible = false;
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(131, 195);
+            textBox1.Location = new Point(225, 192);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(236, 27);
             textBox1.TabIndex = 17;
@@ -199,7 +215,7 @@
             // 
             // textBox2
             // 
-            textBox2.Location = new Point(131, 251);
+            textBox2.Location = new Point(225, 248);
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(236, 27);
             textBox2.TabIndex = 18;
@@ -207,7 +223,7 @@
             // 
             // textBox3
             // 
-            textBox3.Location = new Point(131, 306);
+            textBox3.Location = new Point(225, 303);
             textBox3.Name = "textBox3";
             textBox3.Size = new Size(236, 27);
             textBox3.TabIndex = 19;
@@ -216,6 +232,7 @@
             // label8
             // 
             label8.AutoSize = true;
+            label8.BackColor = Color.White;
             label8.Font = new Font("Segoe UI", 13F);
             label8.Location = new Point(485, 246);
             label8.Name = "label8";
@@ -224,28 +241,31 @@
             label8.Text = "S =";
             label8.Visible = false;
             // 
-            // label9
+            // Area
             // 
-            label9.AutoSize = true;
-            label9.Font = new Font("Segoe UI", 13F);
-            label9.Location = new Point(537, 246);
-            label9.Name = "label9";
-            label9.Size = new Size(71, 30);
-            label9.TabIndex = 21;
-            label9.Text = "label9";
-            label9.Visible = false;
+            Area.AutoSize = true;
+            Area.BackColor = Color.White;
+            Area.Font = new Font("Segoe UI", 13F);
+            Area.Location = new Point(537, 246);
+            Area.Name = "Area";
+            Area.Size = new Size(71, 30);
+            Area.TabIndex = 21;
+            Area.Text = "label9";
+            Area.Visible = false;
             // 
             // Geometry
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(800, 450);
-            Controls.Add(label9);
+            Controls.Add(Area);
             Controls.Add(label8);
             Controls.Add(textBox3);
             Controls.Add(textBox2);
             Controls.Add(textBox1);
-            Controls.Add(label7);
+            Controls.Add(Circ);
             Controls.Add(label6);
             Controls.Add(Solve);
             Controls.Add(label5);
@@ -278,11 +298,11 @@
         private Label label5;
         private Button Solve;
         private Label label6;
-        private Label label7;
+        private Label Circ;
         private TextBox textBox1;
         private TextBox textBox2;
         private TextBox textBox3;
         private Label label8;
-        private Label label9;
+        private Label Area;
     }
 }

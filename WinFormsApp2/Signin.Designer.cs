@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Signin));
             textBox1 = new TextBox();
             textBox2 = new TextBox();
             button1 = new Button();
@@ -38,11 +39,12 @@
             label3 = new Label();
             button2 = new Button();
             linkLabel2 = new LinkLabel();
+            label4 = new Label();
             SuspendLayout();
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(354, 141);
+            textBox1.Location = new Point(256, 172);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(125, 27);
             textBox1.TabIndex = 0;
@@ -50,7 +52,7 @@
             // 
             // textBox2
             // 
-            textBox2.Location = new Point(354, 208);
+            textBox2.Location = new Point(256, 239);
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(125, 27);
             textBox2.TabIndex = 1;
@@ -58,7 +60,7 @@
             // 
             // button1
             // 
-            button1.Location = new Point(372, 278);
+            button1.Location = new Point(274, 309);
             button1.Name = "button1";
             button1.Size = new Size(94, 29);
             button1.TabIndex = 2;
@@ -69,7 +71,7 @@
             // linkLabel1
             // 
             linkLabel1.AutoSize = true;
-            linkLabel1.Location = new Point(557, 282);
+            linkLabel1.Location = new Point(459, 313);
             linkLabel1.Name = "linkLabel1";
             linkLabel1.Size = new Size(62, 20);
             linkLabel1.TabIndex = 3;
@@ -80,24 +82,26 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(241, 141);
+            label1.Font = new Font("Times New Roman", 10.8F);
+            label1.Location = new Point(127, 172);
             label1.Name = "label1";
-            label1.Size = new Size(107, 20);
+            label1.Size = new Size(117, 20);
             label1.TabIndex = 4;
             label1.Text = "Tên đăng nhập";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(278, 211);
+            label2.Font = new Font("Times New Roman", 10.8F);
+            label2.Location = new Point(164, 242);
             label2.Name = "label2";
-            label2.Size = new Size(70, 20);
+            label2.Size = new Size(78, 20);
             label2.TabIndex = 5;
             label2.Text = "Mật khẩu";
             // 
             // textBox3
             // 
-            textBox3.Location = new Point(354, 275);
+            textBox3.Location = new Point(256, 306);
             textBox3.Name = "textBox3";
             textBox3.Size = new Size(125, 27);
             textBox3.TabIndex = 6;
@@ -107,16 +111,17 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(214, 278);
+            label3.Font = new Font("Times New Roman", 10.8F);
+            label3.Location = new Point(100, 309);
             label3.Name = "label3";
-            label3.Size = new Size(134, 20);
+            label3.Size = new Size(150, 20);
             label3.TabIndex = 7;
             label3.Text = "Xác nhận mật khẩu";
             label3.Visible = false;
             // 
             // button2
             // 
-            button2.Location = new Point(372, 335);
+            button2.Location = new Point(274, 366);
             button2.Name = "button2";
             button2.Size = new Size(94, 29);
             button2.TabIndex = 8;
@@ -128,7 +133,7 @@
             // linkLabel2
             // 
             linkLabel2.AutoSize = true;
-            linkLabel2.Location = new Point(557, 282);
+            linkLabel2.Location = new Point(459, 313);
             linkLabel2.Name = "linkLabel2";
             linkLabel2.Size = new Size(85, 20);
             linkLabel2.TabIndex = 9;
@@ -137,11 +142,26 @@
             linkLabel2.Visible = false;
             linkLabel2.LinkClicked += linkLabel2_LinkClicked;
             // 
-            // Form1
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.BackColor = SystemColors.ButtonHighlight;
+            label4.BorderStyle = BorderStyle.FixedSingle;
+            label4.Font = new Font("Times New Roman", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label4.Location = new Point(211, 100);
+            label4.Name = "label4";
+            label4.Size = new Size(212, 35);
+            label4.TabIndex = 10;
+            label4.Text = "phanmemgiaitoan";
+            // 
+            // Signin
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            BackgroundImageLayout = ImageLayout.None;
+            ClientSize = new Size(640, 461);
+            Controls.Add(label4);
             Controls.Add(linkLabel2);
             Controls.Add(button2);
             Controls.Add(label3);
@@ -152,7 +172,7 @@
             Controls.Add(button1);
             Controls.Add(textBox2);
             Controls.Add(textBox1);
-            Name = "Form1";
+            Name = "Signin";
             Text = "Form1";
             ResumeLayout(false);
             PerformLayout();
@@ -170,5 +190,6 @@
         private Label label3;
         private Button button2;
         private LinkLabel linkLabel2;
+        private Label label4;
     }
 }

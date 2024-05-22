@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Pick));
             button1 = new Button();
             button2 = new Button();
             button3 = new Button();
@@ -35,46 +36,53 @@
             // 
             // button1
             // 
+            button1.BackColor = Color.White;
             button1.Font = new Font("Segoe UI", 18F);
-            button1.Location = new Point(47, 43);
+            button1.Location = new Point(142, 84);
             button1.Name = "button1";
             button1.Size = new Size(193, 58);
             button1.TabIndex = 0;
             button1.Text = "Tính toán";
-            button1.UseVisualStyleBackColor = true;
+            button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
             // 
             // button2
             // 
+            button2.BackColor = Color.White;
             button2.Font = new Font("Segoe UI", 18F);
-            button2.Location = new Point(47, 196);
+            button2.Location = new Point(461, 84);
             button2.Name = "button2";
             button2.Size = new Size(193, 58);
             button2.TabIndex = 1;
             button2.Text = "Hình học";
-            button2.UseVisualStyleBackColor = true;
-            button2.Click += this.button2_Click;
+            button2.UseVisualStyleBackColor = false;
+            button2.Click += button2_Click;
             // 
             // button3
             // 
+            button3.BackColor = Color.White;
             button3.Font = new Font("Segoe UI", 18F);
-            button3.Location = new Point(47, 350);
+            button3.Location = new Point(304, 277);
             button3.Name = "button3";
             button3.Size = new Size(193, 58);
             button3.TabIndex = 2;
             button3.Text = "Trò chơi";
-            button3.UseVisualStyleBackColor = true;
+            button3.UseVisualStyleBackColor = false;
+            button3.Click += button3_Click;
             // 
             // Pick
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(800, 450);
             Controls.Add(button3);
             Controls.Add(button2);
             Controls.Add(button1);
             Name = "Pick";
             Text = "Form1";
+            Load += Pick_Load;
             ResumeLayout(false);
         }
 

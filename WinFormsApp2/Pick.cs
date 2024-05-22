@@ -24,9 +24,19 @@ namespace Math_Puzzle_Game
         }
         private void button2_Click(object sender, EventArgs e)
         {
-
+            Geometry geometry = new Geometry();
+            this.Hide();
+            geometry.ShowDialog();
         }
-        private void button3_Click(object sender, EventArgs e) { 
+        private void button3_Click(object sender, EventArgs e)
+        {
+            GSettings gSettings = new GSettings();
+            this.Hide();
+            gSettings.ShowDialog();
+        }
+
+        private void Pick_Load(object sender, EventArgs e)
+        {
 
         }
     }
