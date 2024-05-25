@@ -60,12 +60,13 @@
             // 
             // button1
             // 
+            button1.BackColor = Color.White;
             button1.Location = new Point(274, 309);
             button1.Name = "button1";
             button1.Size = new Size(94, 29);
             button1.TabIndex = 2;
             button1.Text = "Đăng Nhập";
-            button1.UseVisualStyleBackColor = true;
+            button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
             // 
             // linkLabel1
@@ -121,12 +122,13 @@
             // 
             // button2
             // 
+            button2.BackColor = Color.White;
             button2.Location = new Point(274, 366);
             button2.Name = "button2";
             button2.Size = new Size(94, 29);
             button2.TabIndex = 8;
             button2.Text = "Đăng Kí";
-            button2.UseVisualStyleBackColor = true;
+            button2.UseVisualStyleBackColor = false;
             button2.Visible = false;
             button2.Click += button2_Click;
             // 

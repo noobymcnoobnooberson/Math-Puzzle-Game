@@ -27,24 +27,24 @@ namespace Math_Puzzle_Game
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e) // Khi nhấn nút "Giải"
         {
-            string equation = (string)this.textBox1.Text;
+            string equation = (string)this.textBox1.Text; // Khai báo string phương trình là chữ của textbox
             DataTable dt = new DataTable();
-            var v = dt.Compute(equation, "");
-            label5.Text = v.ToString();
-            label5.Show();
+            var v = dt.Compute(equation, ""); // Tính bằng DataTable
+            label5.Text = v.ToString(); // Giá trị ô kết quả là v sang string
+            label5.Show(); // Hiển thị kết quả
         }
 
         private void label5_Click(object sender, EventArgs e)
         {
 
         }
-        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e) // Khi nhấn link quay về
         {
-            Pick pick = new Pick();
+            Pick pick = new Pick(); 
             this.Hide();
-            pick.ShowDialog();
+            pick.ShowDialog(); // Trở về form Pick
         }
     }
 }

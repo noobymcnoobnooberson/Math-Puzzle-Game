@@ -53,7 +53,7 @@
             label1.BackColor = Color.Transparent;
             label1.Font = new Font("Segoe UI", 12F);
             label1.ImageAlign = ContentAlignment.MiddleLeft;
-            label1.Location = new Point(175, 9);
+            label1.Location = new Point(220, 37);
             label1.Name = "label1";
             label1.RightToLeft = RightToLeft.No;
             label1.Size = new Size(67, 28);
@@ -78,7 +78,7 @@
             Timer.BackColor = Color.Transparent;
             Timer.Font = new Font("Segoe UI", 12F);
             Timer.ImageAlign = ContentAlignment.MiddleLeft;
-            Timer.Location = new Point(500, 9);
+            Timer.Location = new Point(452, 37);
             Timer.Name = "Timer";
             Timer.RightToLeft = RightToLeft.No;
             Timer.Size = new Size(67, 28);
@@ -91,7 +91,7 @@
             QLabel.AutoSize = true;
             QLabel.BackColor = Color.Transparent;
             QLabel.Font = new Font("Segoe UI", 24F);
-            QLabel.Location = new Point(219, 205);
+            QLabel.Location = new Point(194, 205);
             QLabel.Name = "QLabel";
             QLabel.RightToLeft = RightToLeft.No;
             QLabel.Size = new Size(133, 54);
@@ -106,7 +106,7 @@
             label5.BackColor = Color.Transparent;
             label5.Font = new Font("Segoe UI", 24F);
             label5.ImageAlign = ContentAlignment.MiddleLeft;
-            label5.Location = new Point(557, 205);
+            label5.Location = new Point(469, 212);
             label5.Name = "label5";
             label5.RightToLeft = RightToLeft.No;
             label5.Size = new Size(50, 54);
@@ -117,7 +117,7 @@
             // UserAns
             // 
             UserAns.Font = new Font("Segoe UI", 24F);
-            UserAns.Location = new Point(613, 205);
+            UserAns.Location = new Point(567, 212);
             UserAns.Name = "UserAns";
             UserAns.Size = new Size(175, 61);
             UserAns.TabIndex = 5;
@@ -132,7 +132,7 @@
             // 
             Next.BackColor = Color.White;
             Next.Font = new Font("Segoe UI", 13F);
-            Next.Location = new Point(334, 302);
+            Next.Location = new Point(284, 302);
             Next.Name = "Next";
             Next.Size = new Size(140, 43);
             Next.TabIndex = 6;
@@ -157,7 +157,7 @@
             // 
             Finish.BackColor = Color.White;
             Finish.Font = new Font("Segoe UI", 13F);
-            Finish.Location = new Point(629, 31);
+            Finish.Location = new Point(602, 50);
             Finish.Name = "Finish";
             Finish.Size = new Size(140, 43);
             Finish.TabIndex = 8;
@@ -170,7 +170,7 @@
             label3.AutoSize = true;
             label3.BackColor = Color.Transparent;
             label3.Font = new Font("Segoe UI", 24F);
-            label3.Location = new Point(532, 321);
+            label3.Location = new Point(469, 302);
             label3.Name = "label3";
             label3.RightToLeft = RightToLeft.No;
             label3.Size = new Size(75, 54);
@@ -182,7 +182,7 @@
             // UserLeft
             // 
             UserLeft.Font = new Font("Segoe UI", 24F);
-            UserLeft.Location = new Point(613, 321);
+            UserLeft.Location = new Point(567, 302);
             UserLeft.Name = "UserLeft";
             UserLeft.Size = new Size(175, 61);
             UserLeft.TabIndex = 10;
@@ -194,26 +194,28 @@
             label4.AutoSize = true;
             label4.BackColor = Color.Transparent;
             label4.Font = new Font("Segoe UI", 24F);
-            label4.Location = new Point(26, 50);
+            label4.Location = new Point(51, 76);
             label4.Name = "label4";
             label4.RightToLeft = RightToLeft.No;
-            label4.Size = new Size(133, 54);
+            label4.Size = new Size(89, 54);
             label4.TabIndex = 11;
-            label4.Text = "12345";
+            label4.Text = "test";
             label4.TextAlign = ContentAlignment.MiddleCenter;
+            label4.Visible = false;
             // 
             // label6
             // 
             label6.AutoSize = true;
             label6.BackColor = Color.Transparent;
             label6.Font = new Font("Segoe UI", 24F);
-            label6.Location = new Point(219, 64);
+            label6.Location = new Point(220, 76);
             label6.Name = "label6";
             label6.RightToLeft = RightToLeft.No;
-            label6.Size = new Size(133, 54);
+            label6.Size = new Size(89, 54);
             label6.TabIndex = 12;
-            label6.Text = "12345";
+            label6.Text = "test";
             label6.TextAlign = ContentAlignment.MiddleCenter;
+            label6.Visible = false;
             label6.Click += label6_Click;
             // 
             // label7
@@ -221,13 +223,14 @@
             label7.AutoSize = true;
             label7.BackColor = Color.Transparent;
             label7.Font = new Font("Segoe UI", 24F);
-            label7.Location = new Point(386, 64);
+            label7.Location = new Point(385, 76);
             label7.Name = "label7";
             label7.RightToLeft = RightToLeft.No;
-            label7.Size = new Size(133, 54);
+            label7.Size = new Size(89, 54);
             label7.TabIndex = 13;
-            label7.Text = "12345";
+            label7.Text = "test";
             label7.TextAlign = ContentAlignment.MiddleCenter;
+            label7.Visible = false;
             // 
             // Game
             // 

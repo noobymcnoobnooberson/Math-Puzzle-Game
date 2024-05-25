@@ -48,6 +48,7 @@
             // label1
             // 
             label1.AutoSize = true;
+            label1.BackColor = Color.Transparent;
             label1.Font = new Font("Segoe UI", 14F);
             label1.Location = new Point(41, 88);
             label1.Name = "label1";
@@ -58,6 +59,7 @@
             // label2
             // 
             label2.AutoSize = true;
+            label2.BackColor = Color.Transparent;
             label2.Font = new Font("Segoe UI", 14F);
             label2.Location = new Point(41, 202);
             label2.Name = "label2";
@@ -68,6 +70,7 @@
             // label3
             // 
             label3.AutoSize = true;
+            label3.BackColor = Color.Transparent;
             label3.Font = new Font("Segoe UI", 14F);
             label3.Location = new Point(43, 309);
             label3.Name = "label3";
@@ -87,6 +90,7 @@
             // label4
             // 
             label4.AutoSize = true;
+            label4.BackColor = Color.Transparent;
             label4.Font = new Font("Segoe UI", 9F);
             label4.Location = new Point(41, 237);
             label4.Name = "label4";
@@ -108,6 +112,7 @@
             // linkLabel1
             // 
             linkLabel1.AutoSize = true;
+            linkLabel1.BackColor = Color.Transparent;
             linkLabel1.Font = new Font("Segoe UI", 13F);
             linkLabel1.Location = new Point(41, 27);
             linkLabel1.Name = "linkLabel1";
@@ -119,6 +124,7 @@
             // 
             // button1
             // 
+            button1.BackColor = Color.White;
             button1.Enabled = false;
             button1.Font = new Font("Segoe UI", 15F);
             button1.Location = new Point(590, 59);
@@ -126,46 +132,50 @@
             button1.Size = new Size(148, 61);
             button1.TabIndex = 12;
             button1.Text = "Bắt đầu";
-            button1.UseVisualStyleBackColor = true;
+            button1.UseVisualStyleBackColor = false;
             button1.Visible = false;
             button1.Click += button1_Click;
             // 
             // button2
             // 
+            button2.BackColor = Color.White;
             button2.Font = new Font("Segoe UI", 12F);
             button2.Location = new Point(153, 196);
             button2.Name = "button2";
             button2.Size = new Size(56, 38);
             button2.TabIndex = 13;
             button2.Text = "Dễ";
-            button2.UseVisualStyleBackColor = true;
+            button2.UseVisualStyleBackColor = false;
             button2.Click += button2_Click;
             // 
             // button3
             // 
+            button3.BackColor = Color.White;
             button3.Font = new Font("Segoe UI", 12F);
             button3.Location = new Point(234, 196);
             button3.Name = "button3";
             button3.Size = new Size(118, 38);
             button3.TabIndex = 14;
             button3.Text = "Trung bình";
-            button3.UseVisualStyleBackColor = true;
+            button3.UseVisualStyleBackColor = false;
             button3.Click += button3_Click;
             // 
             // button4
             // 
+            button4.BackColor = Color.White;
             button4.Font = new Font("Segoe UI", 12F);
             button4.Location = new Point(379, 196);
             button4.Name = "button4";
             button4.Size = new Size(59, 38);
             button4.TabIndex = 15;
             button4.Text = "Khó";
-            button4.UseVisualStyleBackColor = true;
+            button4.UseVisualStyleBackColor = false;
             button4.Click += button4_Click;
             // 
             // Diff
             // 
             Diff.AutoSize = true;
+            Diff.BackColor = Color.Transparent;
             Diff.Font = new Font("Segoe UI", 9F);
             Diff.Location = new Point(131, 237);
             Diff.Name = "Diff";
@@ -186,6 +196,7 @@
             // label5
             // 
             label5.AutoSize = true;
+            label5.BackColor = Color.Transparent;
             label5.Font = new Font("Segoe UI", 14F);
             label5.Location = new Point(295, 312);
             label5.Name = "label5";

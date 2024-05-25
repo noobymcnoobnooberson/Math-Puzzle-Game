@@ -172,5 +172,20 @@ namespace Math_Puzzle_Game
             this.Hide();
             pick.ShowDialog();
         }
+
+        private void Geometry_Load(object sender, EventArgs e)
+        {
+            Chosen.Hide();
+            label3.Hide();
+            label4.Hide();
+            label5.Hide();
+            textBox1.Hide();
+            textBox2.Hide();
+            textBox3.Hide();
+            Solve.Hide();
+            label6.Hide();
+            label8.Hide();
+            Circ.Hide(); Area.Hide();
+        }
     }
 }

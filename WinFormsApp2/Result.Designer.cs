@@ -37,7 +37,7 @@
             // 
             resultlabel.AutoSize = true;
             resultlabel.Font = new Font("Segoe UI", 18F);
-            resultlabel.Location = new Point(326, 188);
+            resultlabel.Location = new Point(351, 201);
             resultlabel.Name = "resultlabel";
             resultlabel.Size = new Size(97, 41);
             resultlabel.TabIndex = 0;
@@ -47,7 +47,7 @@
             // 
             linkLabel1.AutoSize = true;
             linkLabel1.Font = new Font("Segoe UI", 13F);
-            linkLabel1.Location = new Point(46, 39);
+            linkLabel1.Location = new Point(53, 41);
             linkLabel1.Name = "linkLabel1";
             linkLabel1.Size = new Size(121, 30);
             linkLabel1.TabIndex = 12;

@@ -103,25 +103,29 @@
             // 
             // button1
             // 
+            button1.BackColor = Color.White;
             button1.Font = new Font("Segoe UI", 18F);
             button1.Location = new Point(329, 314);
             button1.Name = "button1";
             button1.Size = new Size(139, 55);
             button1.TabIndex = 6;
             button1.Text = "Giải";
-            button1.UseVisualStyleBackColor = true;
+            button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
             // 
             // linkLabel1
             // 
             linkLabel1.AutoSize = true;
+            linkLabel1.BackColor = Color.Transparent;
             linkLabel1.Font = new Font("Segoe UI", 13F);
             linkLabel1.Location = new Point(71, 41);
             linkLabel1.Name = "linkLabel1";
+            linkLabel1.RightToLeft = RightToLeft.No;
             linkLabel1.Size = new Size(121, 30);
             linkLabel1.TabIndex = 7;
             linkLabel1.TabStop = true;
             linkLabel1.Text = "<- Quay lại";
+            linkLabel1.TextAlign = ContentAlignment.TopRight;
             linkLabel1.LinkClicked += linkLabel1_LinkClicked;
             // 
             // Solve

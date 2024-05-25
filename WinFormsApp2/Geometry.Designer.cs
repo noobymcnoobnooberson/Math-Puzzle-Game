@@ -111,8 +111,9 @@
             // linkLabel1
             // 
             linkLabel1.AutoSize = true;
+            linkLabel1.BackColor = Color.White;
             linkLabel1.Font = new Font("Segoe UI", 13F);
-            linkLabel1.Location = new Point(40, 9);
+            linkLabel1.Location = new Point(12, 9);
             linkLabel1.Name = "linkLabel1";
             linkLabel1.Size = new Size(121, 30);
             linkLabel1.TabIndex = 8;
@@ -280,6 +281,7 @@
             Controls.Add(Square);
             Name = "Geometry";
             Text = "Geometry";
+            Load += Geometry_Load;
             ResumeLayout(false);
             PerformLayout();
         }
