@@ -113,10 +113,15 @@ namespace Math_Puzzle_Game
                     }
                     break;
                 case 2:
+                    int a = Int32.Parse(textBox1.Text);
+                    int b = Int32.Parse(textBox2.Text);
+                    int c = Int32.Parse(textBox3.Text);
                     if (textBox1 == null || textBox2 == null || textBox3 == null)
                     {
                         MessageBox.Show("Hãy điền giá trị");
                     }
+                    else if (a + b <= c || a + c <= b || b + c <= a)
+                        MessageBox.Show("Tam giác không hợp lệ");
                     else
                     {
                         label6.Show();
