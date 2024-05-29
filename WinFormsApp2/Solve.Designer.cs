@@ -72,6 +72,7 @@
             textBox1.Font = new Font("Segoe UI", 27F);
             textBox1.Location = new Point(47, 202);
             textBox1.Name = "textBox1";
+            textBox1.RightToLeft = RightToLeft.No;
             textBox1.Size = new Size(518, 67);
             textBox1.TabIndex = 3;
             textBox1.TextAlign = HorizontalAlignment.Center;

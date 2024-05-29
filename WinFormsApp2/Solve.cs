@@ -29,7 +29,8 @@ namespace Math_Puzzle_Game
 
         private void button1_Click(object sender, EventArgs e) // Khi nhấn nút "Giải"
         {
-            string equation = (string)this.textBox1.Text; // Khai báo string phương trình là chữ của textbox
+            string equation = textBox1.Text; // Khai báo string phương trình là chữ của textbox
+            equation = equation.Replace("x", "*");
             DataTable dt = new DataTable();
             var v = dt.Compute(equation, ""); // Tính bằng DataTable
             label5.Text = v.ToString(); // Giá trị ô kết quả là v sang string
