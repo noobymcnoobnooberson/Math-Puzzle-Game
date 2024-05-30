@@ -33,6 +33,7 @@ namespace Math_Puzzle_Game
             Solve.Show();
             label3.Text = "Độ dài cạnh: ";
             Op = 1;
+            Chosen.Show();
         }
         private void Triangle_Click(object sender, EventArgs e)
         {
@@ -52,6 +53,7 @@ namespace Math_Puzzle_Game
             Circ.Hide();
             Area.Hide();
             Op = 2;
+            Chosen.Show();
         }
 
         private void Rectangle_Click(object sender, EventArgs e)
@@ -71,6 +73,7 @@ namespace Math_Puzzle_Game
             Circ.Hide();
             Area.Hide();
             Op = 3;
+            Chosen.Show();
         }
 
         private void Circle_Click(object sender, EventArgs e)
@@ -89,6 +92,7 @@ namespace Math_Puzzle_Game
             Circ.Hide();
             Area.Hide();
             Op = 4;
+            Chosen.Show();
         }
 
         private void Solve_Click(object sender, EventArgs e)
